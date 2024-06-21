@@ -6,7 +6,7 @@ import styles from './Navbar.module.scss';
 import Image from 'next/image';
 import Logo from '@/assets/logo.png';
 import Link from 'next/link';
-// import MenuSvg from '@/assets/menu.svg';
+import MenuSvg from '@/assets/menu.svg';
 import { LinkType } from '@/types/Navbar';
 
 const Links: LinkType[] = [
@@ -79,7 +79,7 @@ const Navbar = () => {
                     </Link>
                 ))}
             </div>
-            {/* <Image src={MenuSvg} alt="Menu" className={styles.Navbar_menu} onClick={() => setIsModalOpen(!isModalOpen)} /> */}
+            <Image src={MenuSvg} alt="Menu" className={styles.Navbar_menu} onClick={() => setIsModalOpen(!isModalOpen)} />
             <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} links={Links} activeLink={activeLink} setActiveLink={setActiveLink} />
         </div>
     );

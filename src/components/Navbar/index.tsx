@@ -7,7 +7,7 @@ import Image from 'next/image';
 import Logo from '@/assets/logo.png';
 import Link from 'next/link';
 import MenuSvg from '@/assets/menu.svg';
-import { LinkType } from '@/types/Navbar';
+import { LinkType, ModalProps } from '@/types/Navbar';
 
 const Links: LinkType[] = [
     {
@@ -86,14 +86,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-interface ModalProps {
-    isOpen: boolean;
-    onClose: () => void;
-    links: LinkType[];
-    activeLink: number;
-    setActiveLink: (index: number) => void;
-}
 
 const Modal = ({
     isOpen,

@@ -45,6 +45,7 @@
         border-bottom-left-radius: var(--radius);
 
         .Navbar_link {
+            all: unset;
             text-decoration: none;
             outline: none;
             color: var(--text);
@@ -70,15 +71,8 @@
             color: var(--default-text);
             border-radius: var(--radius);
             border: 1px solid var(--border);
-        }
-
-        .Navbar_linkActive {
-            color: var(--default-text);
-            border-radius: var(--radius);
-            border: 1px solid var(--border);
             transition: color 0.3s ease-in-out;
         }
-
     }
 
     .Navbar_menu {

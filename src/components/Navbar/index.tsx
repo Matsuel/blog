@@ -67,7 +67,7 @@ const Navbar = () => {
                         {link.label}
                     </Link>
                 ))}
-                <Weeks />
+                {/* <Weeks /> */}
             </div>
         </div>
     );

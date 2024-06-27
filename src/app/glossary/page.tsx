@@ -8,9 +8,9 @@ import Title from '@/components/Title'
 const page = () => {
   return (
     <div className={styles.container}>
-        <Navbar />
-        <Title content="Glossaire" emojiCode="1f4dd" />
-        
+      <Navbar />
+      <Title content="Glossaire" emojiCode="1f4dd" />
+
     </div>
   )
 }

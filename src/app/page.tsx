@@ -3,7 +3,6 @@
 import Navbar from "@/components/Navbar";
 import styles from "./page.module.scss";
 import Title from "@/components/Title";
-import EmojiPicker from "emoji-picker-react";
 
 export default function Home() {
   return (

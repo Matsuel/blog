@@ -6,17 +6,18 @@ import styles from './Title.module.scss';
 import { Emoji } from 'emoji-picker-react';
 import Capitalize from '@/functions/Capitalize';
 
-interface TitleProps {
+interface TitleProps extends React.HTMLAttributes<HTMLDivElement> {
     content: string;
     emojiCode: string;
 }
 
-const Title = ({
+const Title: React.FC<TitleProps> = ({
     content,
-    emojiCode
-}: TitleProps) => {
+    emojiCode,
+    ...props
+}) => {
     return (
-        <div className={styles.Wrapper}>
+        <div className={styles.Wrapper} {...props}>
             <h1 className={styles.Title}>
                 {Capitalize(content)}
             </h1>

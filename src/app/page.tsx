@@ -8,7 +8,10 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Navbar />
-      <Title content="Stage 2024" emojiCode="1f468-200d-1f4bb" />
+      <Title
+        content="Stage 2024"
+        emojiCode="1f468-200d-1f4bb"
+      />
 
     </main>
   );

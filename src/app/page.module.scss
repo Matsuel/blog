@@ -1,10 +1,27 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
   background-color: white;
   background-image: url('../assets/dot.svg');
+
+  .entreprise {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: underline;
+    cursor: pointer;
+
+    .shinkenLogo {
+      width: 10rem;
+      height: auto;
+    }
+
+    .linkSvg {
+      width: 5rem;
+      height: auto;
+    }
+  }
 }

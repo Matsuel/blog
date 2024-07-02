@@ -12,3 +12,7 @@
 - Faire comme sur Medium avec la sidebar à gauche
 - Thème IOS avec les couleurs de base et le dark/light mode bouton avec les mêmes animations
 - Responsive
+
+
+
+Variantspour title souligné ou non et possibilité de passer en param style pour apporter des modifs ou style (voir pour avoir accès à l'autocomplétion dedans)

@@ -8,7 +8,7 @@ import Capitalize from '@/functions/Capitalize';
 
 interface TitleProps extends React.HTMLAttributes<HTMLDivElement> {
     content: string;
-    emojiCode: string;
+    emojiCode?: string;
 }
 
 const Title: React.FC<TitleProps> = ({
@@ -21,7 +21,7 @@ const Title: React.FC<TitleProps> = ({
             <h1 className={styles.Title} {...props}>
                 {Capitalize(content)}
             </h1>
-            <Emoji unified={emojiCode} size={70} />
+            {emojiCode && <Emoji unified={emojiCode} size={70} />}
         </div>
     );
 };

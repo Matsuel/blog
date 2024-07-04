@@ -17,8 +17,8 @@ const Title: React.FC<TitleProps> = ({
     ...props
 }) => {
     return (
-        <div className={styles.Wrapper} {...props}>
-            <h1 className={styles.Title}>
+        <div className={styles.Wrapper}>
+            <h1 className={styles.Title} {...props}>
                 {Capitalize(content)}
             </h1>
             <Emoji unified={emojiCode} size={70} />

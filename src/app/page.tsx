@@ -19,7 +19,7 @@ export default function Home() {
 
       <Link className={styles.entreprise} href="https://www.shinken-enterprise.com/" target="_blank">
         <Image src={Shinken} alt="Shinken" className={styles.shinkenLogo} />
-        <Title content="Shinken Solutions" emojiCode="" />
+        <Title content="Shinken Solutions" emojiCode="" style={{ fontSize: "5rem" }} />
         <Image src={LinkSvg} alt="Link" className={styles.linkSvg} />
       </Link>
 

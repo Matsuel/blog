@@ -17,7 +17,7 @@ const Title: React.FC<TitleProps> = ({
     ...props
 }) => {
     return (
-        //split ça en 2 composants 1 avec la div et l'emoji et l'autre avec le title en prenant props en arg
+        //split ça en 2 composants 1 avec la div et l'emoji et l'autre avec le title en prenant props en arg pour pouvoir l'utiliser comme un vraiment composant
         <div className={styles.Wrapper}>
             <h1 className={styles.Title} {...props}>
                 {Capitalize(content)}

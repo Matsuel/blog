@@ -19,7 +19,8 @@ export default function Home() {
 
       <Link className={styles.entreprise} href="https://www.shinken-enterprise.com/" target="_blank">
         <Image src={Shinken} alt="Shinken" className={styles.shinkenLogo} />
-        <TitleComponent>
+        {/* Supprimer ce composant et mettre EmojiTitle et Title à la place comme ça on peut appliquer les styles comme on veut */}
+        <TitleComponent style={{ fontSize: '5rem'}}>
           Shinken Solutions
         </TitleComponent>
         <Image src={LinkSvg} alt="Link" className={styles.linkSvg} />

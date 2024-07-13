@@ -19,9 +19,10 @@ const Button = ({
         'primary': styles.primary,
     }
     const buttonStyles = [styles.button, variantClass[variant]].join(' ');
+    const style = props.className ? `${props.className} ${buttonStyles}` : buttonStyles;
 
     return (
-        <button className={buttonStyles} {...props}>
+        <button className={style} {...props}>
             {children}
         </button>
     );

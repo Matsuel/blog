@@ -8,6 +8,7 @@ import Logo from '@/assets/logo.png';
 import Link from 'next/link';
 import { LinkType } from '@/types/Navbar';
 import Weeks from '../Weeks';
+import NavLink from '../NavLink';
 
 const Links: LinkType[] = [
     {
@@ -70,10 +71,10 @@ const Navbar = () => {
 
             <div className={styles.Navbar_links}>
                 {Links.map((link) => (
-                    <Link key={link.label} href={link.href} target={link.target ? "_blank" : "_self"} className={styles.Navbar_link}>
+                    <NavLink key={link.label} link={link}>
                         {link.icon}
                         {link.label}
-                    </Link>
+                    </NavLink>
                 ))}
                 <Weeks />
             </div>

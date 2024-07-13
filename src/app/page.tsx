@@ -12,6 +12,7 @@ import Button from "@/components/Button";
 import ChevronRight from "@/assets/ChevronRight.svg";
 
 export default function Home() {
+
   return (
     <main className={styles.main}>
       <Navbar />

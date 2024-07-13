@@ -8,6 +8,8 @@ import Shinken from "@/assets/shinken.png"
 import LinkSvg from "@/assets/link.svg";
 import Image from "next/image";
 import Link from "next/link";
+import Button from "@/components/Button";
+import ChevronRight from "@/assets/ChevronRight.svg";
 
 export default function Home() {
   return (
@@ -25,6 +27,11 @@ export default function Home() {
         </TitleComponent>
         <Image src={LinkSvg} alt="Link" className={styles.linkSvg} />
       </Link>
+
+      <Button style={{ marginTop: "100px" }}>
+        Télécharger le PDF
+        <Image src={ChevronRight} alt="ChevronRight" className={styles.chevronRight} />
+      </Button>
 
     </main>
   );

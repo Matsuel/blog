@@ -3,38 +3,6 @@
     width: auto;
     height: auto;
 
-    .Week {
-        all: unset;
-        position: relative;
-        text-decoration: none;
-        outline: none;
-        color: var(--text);
-        font-size: 1.3rem;
-        font-weight: 500;
-        cursor: pointer;
-        padding: 5px 10px;
-        border: 1px solid transparent;
-        transition: color 0.3s ease-in-out;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        margin-right: 10px;
-    
-        svg {
-            width: 20px;
-            height: 20px;
-        }
-    }
-    
-    .Week:hover {
-        color: var(--default-text);
-        border-radius: var(--radius);
-        border: 1px solid var(--border);
-        transition: color 0.3s ease-in-out;
-    }
-
     .Week_menu {
         position: absolute;
         top: 100%;
@@ -49,30 +17,5 @@
         box-shadow: var(--shadow);
         padding: 10px 0;
         border-radius: var(--radius);
-
-        .Week_menu_item {
-            all: unset;
-            text-decoration: none;
-            outline: none;
-            color: var(--text);
-            font-size: 1.3rem;
-            font-weight: 500;
-            cursor: pointer;
-            padding: 5px 10px;
-            border: 1px solid transparent;
-            transition: color 0.3s ease-in-out;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-    
-            &:hover {
-                color: var(--default-text);
-                border-radius: var(--radius);
-                border: 1px solid var(--border);
-                transition: color 0.3s ease-in-out;
-            }
-        }
     }
 }

@@ -5,7 +5,7 @@
     align-items: center;
     padding: 1rem;
     gap: .5rem;
-    border-radius: 1rem;
+    border-radius: var(--radius);
     font-family: var(--font);
     font-size: 1.2rem;
     font-weight: 900;
@@ -15,19 +15,47 @@
 .default {
     background-color: #000;
     color: #fff;
+    transition: var(--transition);
+
+    &:hover {
+        background-color: #27272a;
+        color: #fff;
+        transition: var(--transition);
+    }
 }
 
 .dark {
     background-color: #000;
     color: #fff;
+    transition: var(--transition);
+
+    &:hover {
+        background-color: #27272a;
+        color: #fff;
+        transition: var(--transition);
+    }
 }
 
 .light {
     background-color: #fff;
     color: #000;
+    transition: var(--transition);
+
+    &:hover {
+        background-color: #f4f5f6;
+        color: #000;
+        transition: var(--transition);
+    }
 }
 
 .primary {
-    background-color: #f4f4f5;
+    background-color: #f4f5f6;
     color: #000;
+    transition: var(--transition);
+
+    &:hover {
+        background-color: #000;
+        color: #fff;
+        transition: var(--transition);
+    }
 }

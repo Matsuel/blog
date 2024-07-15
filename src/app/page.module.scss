@@ -4,38 +4,13 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
-  background-color: white;
+  background-color: var(--background);
   background-image: url('../assets/dot.svg');
 
-  .entreprise {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: underline;
-    cursor: pointer;
-    margin-top: 2rem;
-    transition: var(--transition);
-    background-color: var(--background);
-
-    .shinkenLogo {
-      width: 8rem;
-      height: auto;
-    }
-
-    .linkSvg {
-      width: 5rem;
-      height: auto;
-    }
-
-    &:hover{
-      transform: scale(1.1);
-      transition: var(--transition);
-
-      .linkSvg {
-        rotate: 360deg;
-        transition: var(--transition);
-      }
-    }
+  .container {
+    width: 70%;
+    min-height: 80vh;
+    border-radius: var(--radius);
+    background-color: var(--foreground);
   }
 }

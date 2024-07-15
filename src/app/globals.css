@@ -4,8 +4,10 @@
 }
 
 :root{
-  --background: #fff;
+  /* Changer cette couleur */
+  --background: #f4f5f6;
   --background-hover: #000;
+  --foreground: #fff;
   --default-text: #000;
   --text: #808080;
   --text-effect : transparent;

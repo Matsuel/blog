@@ -35,7 +35,7 @@
     }
 
     .Navbar_links {
-        width: 40%;
+        width: auto;
         height: 100%;
         background-color: var(--background);
         display: flex;
@@ -43,6 +43,8 @@
         justify-content: space-around;
         align-items: center;
         border-bottom-left-radius: var(--radius);
+        margin: 0 1.5rem;
+        gap: 1.5rem;
     }
 
     .Navbar_menu {

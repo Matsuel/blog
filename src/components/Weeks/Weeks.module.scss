@@ -1,4 +1,5 @@
 .Weeks {
+    background-color: transparent;
     position: relative;
     width: auto;
     height: auto;
@@ -8,13 +9,14 @@
         top: 100%;
         color: var(--default-text);
         width: 100%;
-        background-color: var(--background);
+        // background-color: var(--background);
+        background-color: transparent;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 10px;
-        box-shadow: var(--shadow);
+        // box-shadow: var(--shadow);
         padding: 10px 0;
         border-radius: var(--radius);
     }

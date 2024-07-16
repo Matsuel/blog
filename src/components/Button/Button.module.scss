@@ -1,4 +1,6 @@
 .button {
+    width: auto;
+    height: auto;
     all: unset;
     display: flex;
     justify-content: center;
@@ -13,24 +15,24 @@
 }
 
 .default {
-    background-color: #000;
+    background-color: var(--button);
     color: #fff;
     transition: var(--transition);
 
     &:hover {
-        background-color: #27272a;
+        background-color: var(--button-hover);
         color: #fff;
         transition: var(--transition);
     }
 }
 
 .dark {
-    background-color: #000;
+    background-color: var(--button);
     color: #fff;
     transition: var(--transition);
 
     &:hover {
-        background-color: #27272a;
+        background-color: var(--button-hover);
         color: #fff;
         transition: var(--transition);
     }
@@ -42,19 +44,19 @@
     transition: var(--transition);
 
     &:hover {
-        background-color: #f4f5f6;
+        background-color: #e4e4e7;
         color: #000;
         transition: var(--transition);
     }
 }
 
 .primary {
-    background-color: #f4f5f6;
+    border: 1px solid #e4e4e7;
     color: #000;
     transition: var(--transition);
 
     &:hover {
-        background-color: #000;
+        background-color: var(--button);
         color: #fff;
         transition: var(--transition);
     }

@@ -13,7 +13,7 @@ const Button = ({
 }: ButtonProps) => {
 
     const variantClass = {
-        'default': styles.default,
+        'default': styles.dark,
         'light': styles.light,
         'dark': styles.dark,
         'primary': styles.primary,

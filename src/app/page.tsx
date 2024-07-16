@@ -19,21 +19,6 @@ export default function Home() {
 
       <div className={styles.container}>
       {/* Lister les entreprises avec une image, un badge avec le côté bossé (front back), le nom de l'entreprise, le nom du stagiaire, la date de début et de fin du stage, le lien vers le site de l'entreprise, le lien vers le rapport de stage. */}
-        <Button>
-          cc
-        </Button>
-
-        <Button variant="light">
-          Light
-        </Button>
-
-        <Button variant="dark">
-          Dark
-        </Button>
-
-        <Button variant="primary">
-          Primary
-        </Button>
       </div>
     </main>
   );

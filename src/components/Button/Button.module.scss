@@ -14,18 +14,6 @@
     cursor: pointer;
 }
 
-.default {
-    background-color: var(--button);
-    color: #fff;
-    transition: var(--transition);
-
-    &:hover {
-        background-color: var(--button-hover);
-        color: #fff;
-        transition: var(--transition);
-    }
-}
-
 .dark {
     background-color: var(--button);
     color: #fff;

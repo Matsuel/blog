@@ -18,7 +18,8 @@ export default function Home() {
       </EmojiTitle>
 
       <div className={styles.container}>
-      {/* Lister les entreprises avec une image, un badge avec le côté bossé (front back), le nom de l'entreprise, le nom du stagiaire, la date de début et de fin du stage, le lien vers le site de l'entreprise, le lien vers le rapport de stage. */}
+        {/* Lister les entreprises avec une image, un badge avec le côté bossé (front back), le nom de l'entreprise, le nom du stagiaire, la date de début et de fin du stage, le lien vers le site de l'entreprise.
+        Chaque carte redirigera vers un lien contenant tous les articles sur le stage */}
       </div>
     </main>
   );

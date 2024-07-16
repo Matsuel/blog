@@ -35,7 +35,7 @@
     }
 
     .Navbar_links {
-        width: 40%;
+        width: auto;
         height: 100%;
         background-color: var(--background);
         display: flex;
@@ -43,36 +43,8 @@
         justify-content: space-around;
         align-items: center;
         border-bottom-left-radius: var(--radius);
-
-        .Navbar_link {
-            all: unset;
-            text-decoration: none;
-            outline: none;
-            color: var(--text);
-            font-size: 1.3rem;
-            font-weight: 500;
-            cursor: pointer;
-            padding: 5px 10px;
-            border: 1px solid transparent;
-            transition: color 0.3s ease-in-out;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-
-            svg {
-                width: 20px;
-                height: 20px;
-            }
-        }
-
-        .Navbar_link:hover {
-            color: var(--default-text);
-            border-radius: var(--radius);
-            border: 1px solid var(--border);
-            transition: color 0.3s ease-in-out;
-        }
+        margin: 0 1.5rem;
+        gap: 1.5rem;
     }
 
     .Navbar_menu {
@@ -103,10 +75,6 @@
 
         .Navbar_links {
             width: 50%;
-
-            .Navbar_link {
-                font-size: 1rem;
-            }
         }
     }   
 }

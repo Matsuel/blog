@@ -1,6 +1,13 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Regular.ttf');
+}
+
 :root{
-  --background: #fff;
+  /* Changer cette couleur */
+  --background: #f4f5f6;
   --background-hover: #000;
+  --foreground: #fff;
   --default-text: #000;
   --text: #808080;
   --text-effect : transparent;
@@ -9,6 +16,7 @@
   --shadow-hover: 0 10px 15px rgba(0, 0, 0, 0.3);
   --radius: 12px;
   --transition : all 0.3s ease-in-out;
+  --font : 'Montserrat', sans-serif;
 }
 
 * {

@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import styles from "./page.module.scss";
 import EmojiTitle from "@/components/Title/EmojiTitle";
 import Title from "@/components/Title/Title";
-import Button from "@/components/Button";
+import Badge from "@/components/Badge";
 
 export default function Home() {
 

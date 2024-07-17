@@ -1,0 +1,41 @@
+.badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .2rem .5rem;
+    gap: .5rem;
+    border-radius: 50px;
+    font-family: var(--font);
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.dark {
+    background-color: var(--button);
+    color: #fff;
+    transition: var(--transition);
+}
+
+.light {
+    background-color: #fff;
+    color: #000;
+    transition: var(--transition);
+}
+
+.primary {
+    border: 1px solid #e4e4e7;
+    color: #000;
+    transition: var(--transition);
+}
+
+.red {
+    background-color: #ff5555;
+    color: #fff;
+    transition: var(--transition);
+}
+
+.green {
+    background-color: #4d7c0f;
+    color: #fff;
+    transition: var(--transition);
+}

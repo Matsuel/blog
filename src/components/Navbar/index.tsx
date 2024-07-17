@@ -3,8 +3,6 @@
 import React from 'react';
 
 import styles from './Navbar.module.scss';
-import Image from 'next/image';
-import Logo from '@/assets/logo.png';
 import Link from 'next/link';
 import { LinkType } from '@/types/Navbar';
 import Weeks from '../Weeks';
@@ -48,7 +46,7 @@ const Navbar = () => {
             <div className={styles.Navbar_links}>
                 {Links.map((link) => (
                     <Link key={link.label} href={link.href} target={link.target ? '_blank' : ''}>
-                        <Button key={link.label} variant="primary">
+                        <Button key={link.label} variant={link.target ? "dark" : "primary"}>
                             {link.icon}
                             {link.label}
                         </Button>

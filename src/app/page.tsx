@@ -30,6 +30,7 @@ export default function Home() {
 
         <div className={styles.right}>
 
+          {/* Mettre le SVG dans un composant comme en react native pour l'utiliser comme on veut */}
           <Mylink
             label="Github"
             link="https://github.com"

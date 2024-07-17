@@ -1,13 +1,7 @@
-import React, { ReactElement } from 'react'
+import React from 'react'
 import styles from './Mylink.module.scss'
-import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link';
-
-interface MylinkProps {
-    logo: ReactElement;
-    link: string;
-    label: string;
-}
+import { MylinkProps } from '@/types/Mylink';
 
 const Mylink = ({
     label,

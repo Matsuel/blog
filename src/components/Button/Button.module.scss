@@ -40,12 +40,12 @@
 
 .primary {
     border: 1px solid #e4e4e7;
-    color: #000;
+    color: #737373;
     transition: var(--transition);
 
     &:hover {
-        background-color: var(--button);
-        color: #fff;
+        background-color: #e8e8e8;
+        color: #000;
         transition: var(--transition);
     }
 }

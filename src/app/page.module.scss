@@ -23,11 +23,29 @@
     .container {
       width: 50%;
       min-height: 90vh;
+      padding: 1rem;
     }
 
     .right {
       width: 25%;
       min-height: 90vh;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+
+      .contact {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+
+        .contactTitle {
+          font-family: var(--font);
+          font-size: 1.5rem;
+          font-weight: 900;
+        }
+      }
     }
   }
 }

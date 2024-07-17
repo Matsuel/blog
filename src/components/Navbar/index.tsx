@@ -42,7 +42,6 @@ const Navbar = () => {
     return (
         <div className={styles.Navbar_container}>
             <Link className={styles.Navbar_title} href="/">
-                <Image src={Logo} alt="Logo" />
                 Matheo Lang
             </Link>
 

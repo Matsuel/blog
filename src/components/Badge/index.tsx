@@ -2,7 +2,7 @@ import React, { FC, HTMLAttributes } from 'react'
 import styles from './Badge.module.scss'
 
 interface BadgeProps extends HTMLAttributes<HTMLDivElement> {
-    variant?: 'default' | 'light' | 'dark' | 'primary' | 'red' | 'green';
+    variant?: 'default' | 'light' | 'dark' | 'primary' | 'red' | 'green' | 'front' | 'back';
 }
 
 const Badge = ({
@@ -18,6 +18,8 @@ const Badge = ({
         'primary': styles.primary,
         'red': styles.red,
         'green': styles.green,
+        'back': styles.backend,
+        'front': styles.frontend,
     }
     const buttonStyles = [styles.badge, variantClass[variant]].join(' ');
     const style = props.className ? `${props.className} ${buttonStyles}` : buttonStyles;

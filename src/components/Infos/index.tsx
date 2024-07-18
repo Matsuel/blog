@@ -32,9 +32,9 @@ const Infos = () => {
         <div className={styles.infos}>
 
             <div className={styles.about}>
-                <EmojiTitle emojiCode="1f4bc" size={30}>
+                <EmojiTitle emojiCode="1f464" size={30}>
                     <h3 className={styles.aboutTitle}>
-                        Portfolio
+                        Profil
                     </h3>
                 </EmojiTitle>
 

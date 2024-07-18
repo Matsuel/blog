@@ -5,6 +5,7 @@ import styles from "./page.module.scss";
 import EmojiTitle from "@/components/Title/EmojiTitle";
 import Title from "@/components/Title/Title";
 import Infos from "@/components/Infos";
+import EmojiPicker from "emoji-picker-react";
 
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
         <div className={styles.left} />
 
         <div className={styles.container}>
+          
         </div>
 
         <Infos />

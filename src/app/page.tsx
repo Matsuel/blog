@@ -11,15 +11,16 @@ import Entreprise from "@/components/Entreprise";
 const Stages: EntrepriseInfos[] = [
   {
     name: "Shinken Solutions",
+    description: "cc",
     dates: "17/06/2024 09/08/2024",
     side: "back",
+    emoji: "1f4bb",
+    href: "/shinken",
     tags: [
       "Python",
       "Js",
       "Doc",
     ],
-    emoji: "1f4bb",
-    href: "/shinken"
   }
 ]
 

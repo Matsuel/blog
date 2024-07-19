@@ -3,6 +3,7 @@ import React from 'react'
 import styles from './Entreprise.module.scss'
 import Badge from '../Badge'
 import { Emoji } from 'emoji-picker-react'
+import Title from '../Title/Title'
 
 const Entreprise = ({
     dates,

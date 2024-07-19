@@ -24,6 +24,9 @@
       width: 50%;
       min-height: 90vh;
       padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 }

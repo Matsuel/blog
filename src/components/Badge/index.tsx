@@ -1,4 +1,4 @@
-import React, { FC, HTMLAttributes } from 'react'
+import React, { HTMLAttributes } from 'react'
 import styles from './Badge.module.scss'
 
 interface BadgeProps extends HTMLAttributes<HTMLDivElement> {

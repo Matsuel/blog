@@ -5,7 +5,23 @@ import styles from "./page.module.scss";
 import EmojiTitle from "@/components/Title/EmojiTitle";
 import Title from "@/components/Title/Title";
 import Infos from "@/components/Infos";
-import EmojiPicker from "emoji-picker-react";
+import { EntrepriseInfos } from "@/types/Entreprise";
+import Entreprise from "@/components/Entreprise";
+
+const Stages: EntrepriseInfos[] = [
+  {
+    name: "Shinken Solutions",
+    dates: "17/06/2024 09/08/2024",
+    side: "back",
+    tags: [
+      "Python",
+      "Js",
+      "Doc",
+    ],
+    emoji: "1f4bb",
+    href: "/shinken"
+  }
+]
 
 
 export default function Home() {
@@ -20,12 +36,13 @@ export default function Home() {
       </EmojiTitle>
 
       <div className={styles.mainContainer}>
-        {/* Lister les entreprises avec une image, un badge avec le côté bossé (front back), le nom de l'entreprise, le nom du stagiaire, la date de début et de fin du stage, le lien vers le site de l'entreprise.
-        Chaque carte redirigera vers un lien contenant tous les articles sur le stage */}
         <div className={styles.left} />
 
         <div className={styles.container}>
-          
+          {Stages.map((stage) => (
+            <Entreprise {...stage} key={stage.name} />
+          ))}          
+
         </div>
 
         <Infos />

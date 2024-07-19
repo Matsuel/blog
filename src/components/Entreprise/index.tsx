@@ -3,7 +3,8 @@ import React from 'react'
 import styles from './Entreprise.module.scss'
 import Badge from '../Badge'
 import { Emoji } from 'emoji-picker-react'
-import Title from '../Title/Title'
+import Image from 'next/image'
+import Link from 'next/link'
 
 const Entreprise = ({
     dates,
@@ -12,10 +13,11 @@ const Entreprise = ({
     tags,
     emoji,
     href,
-    description
+    description,
+    logo
 }: EntrepriseInfos) => {
     return (
-        <div className={styles.entreprise}>
+        <Link className={styles.entreprise} href={href}>
             <div className={styles.badge}>
                 <Badge variant={side as 'default' | 'light' | 'dark' | 'primary' | 'red' | 'green' | 'front' | 'back'} style={{ padding: ".5rem" }}>
                     <Emoji unified={emoji} size={15} />
@@ -38,7 +40,14 @@ const Entreprise = ({
                     </div>
                 ))}
             </div>
-        </div>
+
+            {/* Position absolue pour le mettre sur la droite de la div */}
+            <Image
+                src={logo}
+                alt={name}
+                className={styles.entrepriseLogo}
+            />
+        </Link>
     )
 }
 

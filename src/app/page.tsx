@@ -7,12 +7,13 @@ import Title from "@/components/Title/Title";
 import Infos from "@/components/Infos";
 import { EntrepriseInfos } from "@/types/Entreprise";
 import Entreprise from "@/components/Entreprise";
+import Shinken from '@/assets/shinken.png'
 
 const Stages: EntrepriseInfos[] = [
   {
     name: "Shinken Solutions",
-    description: "cc",
-    dates: "17/06/2024 09/08/2024",
+    description: "Entreprise ...",
+    dates: "17 Juin 2024, 09 Août 2024",
     side: "back",
     emoji: "1f4bb",
     href: "/shinken",
@@ -21,6 +22,7 @@ const Stages: EntrepriseInfos[] = [
       "Js",
       "Doc",
     ],
+    logo: Shinken
   }
 ]
 

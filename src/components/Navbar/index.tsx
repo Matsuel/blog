@@ -4,8 +4,6 @@ import React from 'react';
 
 import styles from './Navbar.module.scss';
 import Link from 'next/link';
-import { LinkType } from '@/types/Navbar';
-import Weeks from '../Weeks';
 import Button from '../Button';
 import { Links } from '@/datas/Navbar';
 
@@ -26,7 +24,6 @@ const Navbar = () => {
                         </Button>
                     </Link>
                 ))}
-                <Weeks />
             </div>
         </div>
     );

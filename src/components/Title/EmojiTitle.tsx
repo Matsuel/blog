@@ -15,7 +15,7 @@ const EmojiTitle:FC<EmojiTitleProps> = ({
 }) => {
     return (
         <div className={styles.Wrapper} {...props}>
-            {emojiCode && <Emoji unified={emojiCode} size={size ? size: 70} />}
+            {emojiCode && <Emoji unified={emojiCode} size={size ?? 70} />}
             {children}
         </div>
     )

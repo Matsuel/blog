@@ -5,7 +5,7 @@ import { useSearchParams } from 'next/navigation'
 import React from 'react'
 import DefaultLayout from '@/components/DefaultLayout'
 
-const page = () => {
+const Shinken = () => {
 
   const param = useSearchParams()
 
@@ -16,4 +16,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Shinken

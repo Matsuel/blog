@@ -2,7 +2,7 @@
 
 
 import { useSearchParams } from 'next/navigation'
-import React from 'react'
+import React, { Suspense } from 'react'
 import DefaultLayout from '@/components/DefaultLayout'
 
 const Shinken = () => {
@@ -10,9 +10,11 @@ const Shinken = () => {
   const param = useSearchParams()
 
   return (
-    <DefaultLayout>
-      {param.get('name')}
-    </DefaultLayout>
+    <Suspense fallback={<div>Loading</div>}>
+      <DefaultLayout>
+        {param.get('name')}
+      </DefaultLayout>
+    </Suspense>
   )
 }
 

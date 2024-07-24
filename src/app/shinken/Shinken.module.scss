@@ -1,0 +1,47 @@
+.article {
+    position: relative;
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5rem;
+    gap: .6rem;
+    background-color: white;
+    box-shadow: var(--shadow-hover);
+    border-radius: var(--radius);
+
+    .articleBadge {
+        margin-bottom: 2rem;   
+    }
+
+    .articleTitle {
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    .articleSubtitle {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .articleParagraphe {
+        width: 100%;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+
+    .articleImage {
+        width: 100%;
+        height: auto;
+        border-radius: var(--radius);
+    }
+
+    .articleList {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: .6rem;
+        padding-left: 2rem;
+    }
+}

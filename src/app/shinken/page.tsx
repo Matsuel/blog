@@ -19,6 +19,7 @@ const Shinken = () => {
 
 
       Supprimer ça et mettre un modal qui s'ouvre sur la page princpiae quand on clique sur un article à lire avec un filtre de luminosité qui masque un peu les autres éléments
+      Taille fixe et scroll dedans
 
       {/* <div className={styles.article}>
 

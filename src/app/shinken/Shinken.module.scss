@@ -20,6 +20,39 @@
         font-weight: 900;
     }
 
+    .author {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+
+        .authorInfos {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            font-size: 1.3rem;
+            font-weight: 800;
+
+            .authorLogo {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        .authorSeparator {
+            width: 2px;
+            height: 1.2rem;
+            background-color: red;
+        }
+
+        .authorDate {
+            font-size: 1.3rem;
+        }
+    }
+
     .articleSubtitle {
         font-size: 1.5rem;
         font-weight: bold;

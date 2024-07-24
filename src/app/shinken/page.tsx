@@ -8,6 +8,7 @@ import { Emoji } from 'emoji-picker-react'
 import ReactMarkdown from 'react-markdown';
 import Image from 'next/image'
 import NewProps from '@/assets/host_new_property.png'
+import Logo from '@/app/favicon.ico'
 
 const Shinken = () => {
 
@@ -25,6 +26,20 @@ const Shinken = () => {
 
         <div className={styles.articleTitle}>
           Article 1
+        </div>
+
+        <div className={styles.author}>
+          <div className={styles.authorInfos}>
+            <Image src={Logo} className={styles.authorLogo} alt='logo' />
+            Mathéo Lang
+          </div>
+
+          <div className={styles.authorSeparator} />
+
+          <div className={styles.authorDate}>
+            24 Juillet 2024
+          </div>
+
         </div>
 
         <div className={styles.articleSubtitle}>

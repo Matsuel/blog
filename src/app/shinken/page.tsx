@@ -9,12 +9,21 @@ import ReactMarkdown from 'react-markdown';
 import Image from 'next/image'
 import NewProps from '@/assets/host_new_property.png'
 import Logo from '@/app/favicon.ico'
+import Link from 'next/link'
+import CloseCross from '@/assets/CloseCross.svg'
 
 const Shinken = () => {
 
   return (
     <DefaultLayout>
       <div className={styles.article}>
+
+        <div className={styles.closeButtonWrapper}>
+          <Link className={styles.closeButton} href="/">
+            <Image src={CloseCross} className={styles.closeButtonImg} alt='close button' />
+
+          </Link>
+        </div>
 
         <div className={styles.articleBadge}>
           <Badge variant='back'>
@@ -28,7 +37,7 @@ const Shinken = () => {
           Article 1
         </div>
 
-        <div className={styles.author}>
+        <Link className={styles.author} href="https://matsuel.netlify.app" target='_blank'>
           <div className={styles.authorInfos}>
             <Image src={Logo} className={styles.authorLogo} alt='logo' />
             Mathéo Lang
@@ -40,7 +49,7 @@ const Shinken = () => {
             24 Juillet 2024
           </div>
 
-        </div>
+        </Link>
 
         <div className={styles.articleSubtitle}>
           Article 1

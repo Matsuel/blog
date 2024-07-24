@@ -16,7 +16,11 @@ const Shinken = () => {
 
   return (
     <DefaultLayout>
-      <div className={styles.article}>
+
+
+      Supprimer ça et mettre un modal qui s'ouvre sur la page princpiae quand on clique sur un article à lire avec un filtre de luminosité qui masque un peu les autres éléments
+
+      {/* <div className={styles.article}>
 
         <div className={styles.closeButtonWrapper}>
           <Link className={styles.closeButton} href="/">
@@ -63,18 +67,18 @@ const Shinken = () => {
           src={NewProps}
           className={styles.articleImage}
           alt='cc'
-        />
+        /> */}
 
         {/* Arguements direction row ou column */}
         {/* Arguements index pour liste nuérotée */}
-        <div className={styles.articleList}>
+        {/* <div className={styles.articleList}>
           <div className={styles.articleListElement}>1</div>
           <div className={styles.articleListElement}>1</div>
           <div className={styles.articleListElement}>1</div>
           <div className={styles.articleListElement}>1</div>
         </div>
 
-      </div>
+      </div> */}
 
     </DefaultLayout>
   )

@@ -2,15 +2,6 @@
 
 import React from 'react'
 import DefaultLayout from '@/components/DefaultLayout'
-import styles from './Shinken.module.scss'
-import Badge from '@/components/Badge'
-import { Emoji } from 'emoji-picker-react'
-import ReactMarkdown from 'react-markdown';
-import Image from 'next/image'
-import NewProps from '@/assets/host_new_property.png'
-import Logo from '@/app/favicon.ico'
-import Link from 'next/link'
-import CloseCross from '@/assets/CloseCross.svg'
 
 const Shinken = () => {
 

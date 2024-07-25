@@ -23,7 +23,9 @@ const ArticleHome = ({
   }, []);
 
   const closeModal = useCallback((event: React.MouseEvent) => {
-    event.stopPropagation()
+    if (event) {
+      event.stopPropagation()
+    }
     setShowModal(false);
   }, []);
 

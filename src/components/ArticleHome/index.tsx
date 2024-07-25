@@ -28,7 +28,7 @@ const ArticleHome = ({
   }, []);
 
   return (
-    <div className={styles.articleHome} onClick={openModal}>
+    <button className={styles.articleHome} onClick={openModal}>
       <div className={styles.badge}>
         <Badge variant={side as 'default' | 'light' | 'dark' | 'primary' | 'red' | 'green' | 'front' | 'back'} style={{ padding: ".5rem" }}>
           <Emoji unified={emoji} size={15} />
@@ -53,7 +53,7 @@ const ArticleHome = ({
       </div>
 
       {showModal && <Modal closeModal={closeModal} />}
-    </div>
+    </button>
   )
 }
 

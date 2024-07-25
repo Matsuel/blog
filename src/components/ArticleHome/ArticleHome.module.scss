@@ -11,6 +11,7 @@
     background-color: var(--background);
     border-radius: var(--radius);
     transition: var(--transition);
+    cursor: pointer;
 
     .badge {
         position: absolute;

@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useCallback, useState } from 'react'
 import styles from './ArticleHome.module.scss'
 import { Article } from '@/types/Article'
-import Link from 'next/link'
 import Badge from '../Badge'
 import { Emoji } from 'emoji-picker-react'
+import Modal from '../Modal'
 
 const ArticleHome = ({
   date,
@@ -15,8 +15,20 @@ const ArticleHome = ({
   title,
   template
 }: Article) => {
+
+  const [showModal, setShowModal] = useState<boolean>(false)
+
+  const openModal = useCallback(() => {
+    setShowModal(true);
+  }, []);
+
+  const closeModal = useCallback((event: React.MouseEvent) => {
+    event.stopPropagation()
+    setShowModal(false);
+  }, []);
+
   return (
-    <Link className={styles.articleHome} href={href}>
+    <div className={styles.articleHome} onClick={openModal}>
       <div className={styles.badge}>
         <Badge variant={side as 'default' | 'light' | 'dark' | 'primary' | 'red' | 'green' | 'front' | 'back'} style={{ padding: ".5rem" }}>
           <Emoji unified={emoji} size={15} />
@@ -40,7 +52,8 @@ const ArticleHome = ({
         ))}
       </div>
 
-    </Link>
+      {showModal && <Modal closeModal={closeModal} />}
+    </div>
   )
 }
 

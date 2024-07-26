@@ -1,18 +1,21 @@
-import React, { LegacyRef, MouseEventHandler } from 'react'
+import React, { HTMLAttributes, LegacyRef, MouseEventHandler, ReactElement } from 'react'
 import ReactDOM from 'react-dom'
 import styles from './Modal.module.scss'
 import CloseButton from '../CloseButton';
 import { useClickAway } from '@uidotdev/usehooks';
 
-interface ModalProps {
+interface ModalProps extends HTMLAttributes<HTMLDivElement> {
     closeModal: Function;
 }
 
 // Hook useDocumentTitle pour définir le titre de la page à celui de l'article
 
 const Modal = ({
-    closeModal
+    closeModal,
+    children
 }: ModalProps) => {
+
+    console.log(children)
 
     const clickAwayRef = useClickAway(() => {
         closeModal()
@@ -24,6 +27,8 @@ const Modal = ({
                 <div className={styles.closeButtonWrapper}>
                     <CloseButton closeFunction={closeModal as MouseEventHandler<HTMLButtonElement>} />
                 </div>
+                {children}
+
             </div>
         </div>,
         document.body

@@ -1,4 +1,6 @@
+import Test from "@/components/Articles/Test";
 import { Article } from "@/types/Article";
+import React, { ReactElement } from "react";
 
 export const Articles: Article[] = [
     {
@@ -12,5 +14,6 @@ export const Articles: Article[] = [
             'js',
             'python'
         ],
+        template: <Test />
     }
 ]

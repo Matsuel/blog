@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react'
+import React, { ReactElement, useCallback, useState } from 'react'
 import styles from './ArticleHome.module.scss'
 import { Article } from '@/types/Article'
 import Badge from '../Badge'
@@ -20,6 +20,7 @@ const ArticleHome = ({
 
   const openModal = useCallback(() => {
     setShowModal(true);
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   }, []);
 
   const closeModal = useCallback((event: React.MouseEvent) => {
@@ -54,7 +55,12 @@ const ArticleHome = ({
         ))}
       </div>
 
-      {showModal && <Modal closeModal={closeModal} />}
+      {showModal &&
+        <Modal
+          closeModal={closeModal}
+        >
+          {template}
+        </Modal>}
     </button>
   )
 }

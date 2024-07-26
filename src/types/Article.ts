@@ -1,4 +1,4 @@
-import { ReactElement } from "react";
+import React, { ReactElement } from "react";
 
 export type Article = {
     title: string;
@@ -8,5 +8,5 @@ export type Article = {
     tags: string[];
     emoji: "1f4bb" | "1f3a8";
     href: string;  //href sous la forme /entreprise/article
-    template?: ReactElement;
+    template?: React.JSX.Element;
 }

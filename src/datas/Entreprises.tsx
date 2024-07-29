@@ -1,6 +1,6 @@
 import { EntrepriseInfos } from "@/types/Entreprise";
 import Shinken from '@/assets/shinken.png'
-import Test from "@/components/Articles/Test";
+import ShinkenArticle from "@/components/Articles/Shinken";
 
 export const Entreprises: EntrepriseInfos[] = [
   {
@@ -15,6 +15,6 @@ export const Entreprises: EntrepriseInfos[] = [
       "Doc",
     ],
     logo: Shinken,
-    template: <Test />
+    template: <ShinkenArticle title="Shinken Solutions" />
   },
 ]

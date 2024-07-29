@@ -9,7 +9,6 @@ const ArticleHome = ({
   date,
   description,
   emoji,
-  href,
   side,
   tags,
   title,

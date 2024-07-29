@@ -7,6 +7,7 @@ import { Entreprises } from "@/datas/Entreprises";
 import { Articles } from "@/datas/Articles";
 import ArticleHome from "@/components/ArticleHome";
 import DefaultLayout from "@/components/DefaultLayout";
+import EmojiPicker from "emoji-picker-react";
 
 
 export default function Home() {
@@ -36,6 +37,7 @@ export default function Home() {
           <ArticleHome {...article} key={article.description} />
         ))}
       </div>
+
     </DefaultLayout >
   )
 }

@@ -4,16 +4,12 @@ import React, { ReactElement } from "react";
 
 export const Articles: Article[] = [
     {
-        title: "cc",
-        description: 'article premier du nom',
-        date: "22/07/2024",
-        emoji: "1f3a8",
-        href: "/shinken?name=premier_du_nom",
+        title: "Bilan Stage 2024",
+        description: "Bilan de l'expérience au sein de shinken solutions après 8 semaines",
+        date: "29/07/2024",
+        emoji: "1f4bc",
         side: "front",
-        tags: [
-            'js',
-            'python'
-        ],
+        tags: [],
         template: <Test />
     }
 ]

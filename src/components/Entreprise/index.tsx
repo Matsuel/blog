@@ -1,10 +1,11 @@
 import { EntrepriseInfos } from '@/types/Entreprise'
-import React from 'react'
+import React, { useCallback, useState } from 'react'
 import styles from './Entreprise.module.scss'
 import Badge from '../Badge'
 import { Emoji } from 'emoji-picker-react'
 import Image from 'next/image'
 import Link from 'next/link'
+import Modal from '../Modal'
 
 const Entreprise = ({
     dates,
@@ -12,12 +13,27 @@ const Entreprise = ({
     side,
     tags,
     emoji,
-    href,
     description,
-    logo
+    logo,
+    template
 }: EntrepriseInfos) => {
+
+    const [showModal, setShowModal] = useState<boolean>(false)
+
+    const openModal = useCallback(() => {
+        setShowModal(true);
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+    }, []);
+
+    const closeModal = useCallback((event: React.MouseEvent) => {
+        if (event) {
+            event.stopPropagation()
+        }
+        setShowModal(false);
+    }, []);
+
     return (
-        <Link className={styles.entreprise} href={href}>
+        <button className={styles.entreprise} onClick={openModal}>
             <div className={styles.badge}>
                 <Badge variant={side as 'default' | 'light' | 'dark' | 'primary' | 'red' | 'green' | 'front' | 'back'} style={{ padding: ".5rem" }}>
                     <Emoji unified={emoji} size={15} />
@@ -47,7 +63,14 @@ const Entreprise = ({
                 alt={name}
                 className={styles.entrepriseLogo}
             />
-        </Link>
+
+            {showModal &&
+                <Modal
+                    closeModal={closeModal}
+                >
+                    {template}
+                </Modal>}
+        </button>
     )
 }
 

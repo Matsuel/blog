@@ -1,4 +1,5 @@
 import { StaticImageData } from "next/image";
+import React from "react";
 
 export type EntrepriseInfos = {
     name: string;
@@ -6,7 +7,7 @@ export type EntrepriseInfos = {
     side: string;
     tags: string[];
     emoji: "1f4bb" | "1f3a8";
-    href: string;
     logo: StaticImageData;
     description?: string;
+    template: React.JSX.Element;
 }

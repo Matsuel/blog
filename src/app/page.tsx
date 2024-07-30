@@ -40,6 +40,11 @@ const Home = () => {
                             Portfolio (anglais uniquement)
                         </Button>
                     </Link>
+                    <Link href='/CV.pdf' target='_blank'>
+                        <Button variant='dark'>
+                            CV
+                        </Button>
+                    </Link>
                     <Link href={HomeDatas.linkedin} target='_blank'>
                         <Button variant='primary'>
                             Linkedin

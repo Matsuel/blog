@@ -19,7 +19,7 @@ const Home = () => {
             Lien grafiakrt https://www.youtube.com/watch?v=YNbPMm08jcw
 
             <div className={styles.presentation}>
-                {HomeDatas['paragraphe'].map((paragraphe) => (
+                {HomeDatas.paragraphe.map((paragraphe) => (
                     <p className={styles.paragraphe} key={paragraphe}>
                         {paragraphe}
                     </p>
@@ -33,14 +33,14 @@ const Home = () => {
                 </Title>
 
                 <div className={styles.homeButtons}>
+                <Link href='/CV.pdf' target='_blank'>
+                        <Button variant='dark'>
+                            CV
+                        </Button>
+                    </Link>
                     <Link href={HomeDatas.portfolio} target='_blank'>
                         <Button variant='primary'>
                             Portfolio (anglais uniquement)
-                        </Button>
-                    </Link>
-                    <Link href='/CV.pdf' target='_blank'>
-                        <Button variant='dark'>
-                            CV
                         </Button>
                     </Link>
                     <Link href={HomeDatas.linkedin} target='_blank'>

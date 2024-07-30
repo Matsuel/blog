@@ -20,7 +20,7 @@ const Home = () => {
 
             <div className={styles.presentation}>
                 {HomeDatas['paragraphe'].map((paragraphe) => (
-                    <p className={styles.paragraphe}>
+                    <p className={styles.paragraphe} key={paragraphe}>
                         {paragraphe}
                     </p>
                 ))}

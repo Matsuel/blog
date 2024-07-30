@@ -2,13 +2,11 @@
 
 import DefaultLayout from '@/components/DefaultLayout'
 import React from 'react'
-import styles from './Page.module.scss'
+import styles from './page.module.scss'
 import { HomeDatas } from '@/datas/Home'
 import Button from '@/components/Button'
 import Link from 'next/link'
 import Title from '@/components/Title/Title'
-import EmojiPicker from 'emoji-picker-react'
-import EmojiTitle from '@/components/Title/EmojiTitle'
 
 const Home = () => {
     return (
@@ -51,6 +49,12 @@ const Home = () => {
                         </Button>
                     </Link>
                 </div>
+
+                <Link href='/blog'>
+                    <Button variant='primary'>
+                        Visiter le blog
+                    </Button>
+                </Link>
             </div>
 
         </DefaultLayout>

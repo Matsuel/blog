@@ -13,3 +13,18 @@
         color: #000;
     }
 }
+
+.homeLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+
+    .homeButtons {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.5rem;
+    }
+}

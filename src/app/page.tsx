@@ -4,6 +4,11 @@ import DefaultLayout from '@/components/DefaultLayout'
 import React from 'react'
 import styles from './Page.module.scss'
 import { HomeDatas } from '@/datas/Home'
+import Button from '@/components/Button'
+import Link from 'next/link'
+import Title from '@/components/Title/Title'
+import EmojiPicker from 'emoji-picker-react'
+import EmojiTitle from '@/components/Title/EmojiTitle'
 
 const Home = () => {
     return (
@@ -15,9 +20,8 @@ const Home = () => {
 
             Lien grafiakrt https://www.youtube.com/watch?v=YNbPMm08jcw
 
-
             <div className={styles.presentation}>
-                {HomeDatas['paragraphe'].map((paragraphe)=>(
+                {HomeDatas['paragraphe'].map((paragraphe) => (
                     <p className={styles.paragraphe}>
                         {paragraphe}
                     </p>
@@ -25,9 +29,24 @@ const Home = () => {
             </div>
 
 
+            <div className={styles.homeLinks}>
+                <Title>
+                    Liens
+                </Title>
 
-
-
+                <div className={styles.homeButtons}>
+                    <Link href={HomeDatas.portfolio} target='_blank'>
+                        <Button variant='primary'>
+                            Portfolio (anglais uniquement)
+                        </Button>
+                    </Link>
+                    <Link href={HomeDatas.linkedin} target='_blank'>
+                        <Button variant='primary'>
+                            Linkedin
+                        </Button>
+                    </Link>
+                </div>
+            </div>
 
         </DefaultLayout>
     )

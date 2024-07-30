@@ -10,7 +10,7 @@ import Title from '@/components/Title/Title'
 
 const Home = () => {
     return (
-        <DefaultLayout title='Matheo' emojiCode="1f3e1">
+        <DefaultLayout title='Matheo' emojiCode="">
             Qui suis-je?
             CV
             Parcours

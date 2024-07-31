@@ -26,6 +26,14 @@ const Home = () => {
                 ))}
             </div>
 
+            <div className={styles.parcours}>
+                {HomeDatas.parcours.map((cc)=>(
+                    <div>
+                        {cc.city}
+                    </div>
+                ))}
+            </div>
+
 
             <div className={styles.homeLinks}>
                 <Title>

@@ -14,26 +14,80 @@
     }
 }
 
-.parcours {
+.about {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-}
-
-.homeLinks {
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    padding: 2.5%;
     gap: 1.5rem;
 
-    .homeButtons {
-        width: 100%;
+    .parcours {
+        width: 50%;
+        height: auto;
+        background-color: var(--background);
         display: flex;
-        flex-direction: row;
-        align-items: center;
+        flex-direction: column;
         gap: 1.5rem;
+        padding: 2.5%;
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+
+        .parcoursRow {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            gap: 10%;
+
+            .parcoursIcon {
+                height: 50px;
+                width: 55px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 5px;
+                border-radius: var(--radius);
+                background-color: #171717;
+                color: #fff;
+                transition: var(--transition);
+                cursor: pointer;
+
+                &:hover {
+                    transition: var(--transition);
+                    background-color: #383838;
+                }
+
+            }
+
+            .parcoursInfos {
+                width: 100%;
+
+                .parcoursInfosContainer {
+                    width: auto;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding-right: 40%;
+                }
+            }
+        }
+    }
+
+    .homeLinks {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        
+        .homeButtons {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1.5rem;
+        }
     }
 }

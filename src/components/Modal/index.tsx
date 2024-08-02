@@ -1,4 +1,4 @@
-import React, { HTMLAttributes, LegacyRef, MouseEventHandler, ReactElement } from 'react'
+import React, { HTMLAttributes, LegacyRef, MouseEventHandler } from 'react'
 import ReactDOM from 'react-dom'
 import styles from './Modal.module.scss'
 import CloseButton from '../CloseButton';

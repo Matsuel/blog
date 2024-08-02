@@ -4,7 +4,6 @@ import styles from './Entreprise.module.scss'
 import Badge from '../Badge'
 import { Emoji } from 'emoji-picker-react'
 import Image from 'next/image'
-import Link from 'next/link'
 import Modal from '../Modal'
 
 const Entreprise = ({

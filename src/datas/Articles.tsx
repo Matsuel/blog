@@ -1,6 +1,6 @@
 import Test from "@/components/Articles/Test";
 import { Article } from "@/types/Article";
-import React, { ReactElement } from "react";
+import React from "react";
 
 export const Articles: Article[] = [
     {

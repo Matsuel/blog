@@ -1,5 +1,3 @@
-import { ReactNode } from "react";
-
 export const HomeDatas = {
     'paragraphe': [
         "Le confinement nous a tous obligés à rester à la maison, et pour ma part, il a été révélateur pour ma future carrière. Étant donné que je n'avais pas grand-chose à faire, je me suis lancé le défi d'apprendre la programmation web. J'ai donc commencé à chercher sur internet des tutoriels afin de me créer quelques bases. J'ai suivi un tutoriel de 2 heures sur la création d'un formulaire de connexion/inscription, la réinitialisation de mot de passe et l'envoi de lien par email pour valider un compte, le tout en PHP.",

@@ -1,4 +1,4 @@
-import React, { ReactElement, useCallback, useState } from 'react'
+import React, { useCallback, useState } from 'react'
 import styles from './ArticleHome.module.scss'
 import { Article } from '@/types/Article'
 import Badge from '../Badge'

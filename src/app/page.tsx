@@ -1,7 +1,7 @@
 "use client"
 
 import DefaultLayout from '@/components/DefaultLayout'
-import React, { ReactNode } from 'react'
+import React from 'react'
 import styles from './page.module.scss'
 import { HomeDatas } from '@/datas/Home'
 import Button from '@/components/Button'

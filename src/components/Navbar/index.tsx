@@ -14,6 +14,7 @@ const Navbar = () => {
 
     const windowsize = useSize();
     const [showModal, setShowModal] = useState<boolean>(false);
+    const isClient = typeof window === 'object';
 
 
     return (
@@ -23,7 +24,7 @@ const Navbar = () => {
                 <Image src={Menu} alt='menu' />
             </button>
             
-            {(windowsize[0] > 512 || showModal) &&
+            {(isClient && (windowsize[0] > 512 || showModal)) &&
                 <>
                     <Link className={styles.Navbar_title} href="/">
                         Matheo Lang

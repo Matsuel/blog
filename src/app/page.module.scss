@@ -91,3 +91,44 @@
         }
     }
 }
+
+@media screen and (max-width: 960px) {
+    .about {
+        flex-direction: column;
+
+        .parcours {
+            width: 70%;
+        }
+
+        .homeLinks {
+            width: 70%;
+            align-items: center;
+            
+            .homeButtons {
+                justify-content: center;
+            }
+        }
+    }   
+}
+
+@media screen and (max-width: 720px) {
+    .about {
+        .parcours {
+            width: 88%;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about {
+        .parcours {
+            .parcoursRow {
+                .parcoursInfos {
+                    .parcoursInfosContainer {
+                        padding-right: 10%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.CustomLink {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+
+    .CustomLinkLogo {
+        width: 25px;
+        height: auto;
+        transition: all 0.5s ease-in-out;
+    }
+
+    &:hover {
+        .CustomLinkLogo {
+            transform: rotate(360deg);
+        }
+    }
+}

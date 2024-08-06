@@ -26,10 +26,10 @@ const ShinkenArticle = ({
             <div className={styles.paragraphe}>Shinken se concentre sur la fourniture d&apos;une solution de monitoring dite Scalable (qui est capable de fonctionner dans une petite entreprise mais également dans une grosse entreprise disposant de 15000 serveurs) grace à son architecture globale sous forme de démons.</div>
             <div className={styles.paragraphe}>Chaque démons dispose d&apos;un rôle qui lui es attribué, les différents démons sont les suivants : </div>
             <div className={styles.paragraphe}> - Synchronizer: Permet de gérer l&apos;interface de configuration ainsi que les échanges avec la base de données </div>
-            <div className={styles.paragraphe}> - Arbiter: Gère l&apos;ensemble de l&apos;architecture, il sert de "chef d&apos;orchestre"</div>
+            <div className={styles.paragraphe}> - Arbiter: Gère l&apos;ensemble de l&apos;architecture, il sert de &quot;chef d&apos;orchestre&quot;</div>
             <div className={styles.paragraphe}> - Receiver: Démon qui reçoit les requêtes effectuées via son API</div>
             <div className={styles.paragraphe}> - Scheduler: Récupère toutes les données venant du Poller, Reactionner ainsi que du Broker afin de les transmettre à l&apos;arbiter qui les enverra au Synchronizer</div>
-            <div className={styles.paragraphe}> - Puller: Effectue tous les tests "checks" sur tous les éléments supervisées comme par exemple vérifier son accès à internet via un ping</div>
+            <div className={styles.paragraphe}> - Puller: Effectue tous les tests &quot;checks&quot; sur tous les éléments supervisées comme par exemple vérifier son accès à internet via un ping</div>
             <div className={styles.paragraphe}> - Broker: Gère l&apos;interface de visualisation (interface sur laquelle un utilisateur peut effectuer des actions et vérifier le bon fonctionnement des objets)</div>
             <div className={styles.paragraphe}> - Reactionner: Envoie les notifications si elles sont activées aux personnes à prévenir en cas de mauvais résultats de tests effectués par le Poller</div>
 

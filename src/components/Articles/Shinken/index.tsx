@@ -4,6 +4,9 @@ import styles from './Shinken.module.scss'
 import Logo from '@/assets/shinken.png'
 import Image from 'next/image';
 import CustomLink from '@/components/CustomLink';
+import Python from '@/assets/python.svg'
+import JSLogo from '@/assets/js.svg'
+import CLogo from '@/assets/c.svg'
 
 interface ArticleProps {
     title: string;
@@ -22,7 +25,7 @@ const ShinkenArticle = ({
             <div className={styles.paragraphe}>Fondée en <span className={styles.bold}>2009</span> par <span className={styles.bold}>Jean Gabès</span>, cette entreprise a rapidement su s&apos;imposer comme un acteur incontournable dans le domaine de la <span className={styles.underline}>surveillance des infrastructures IT.</span> </div>
             <div className={styles.paragraphe}>Située à <CustomLink href='https://maps.app.goo.gl/PvEGLWPDAdmFCTqKA' title='Artigues-près-Bordeaux' is_underline /> entre la sortie 25 et 26 de la rocade bordelaise, Shinken Solutions bénéficie d’un emplacement stratégique dans le Sud-Ouest de la France.</div>
 
-            <div className={styles.paragraphe}>L&apos;objectif principal de Shinken était de créer une solution de monitoring open source qui éait basée sur des technologies récentes (Python et Javascript) pour l&apos;époque et simple de développement (comparé à Nagios qui est fait en C le langage star de l&apos;époque).</div>
+            <div className={styles.paragraphe}>L&apos;objectif principal de Shinken était de créer une solution de monitoring open source qui éait basée sur des technologies récentes (Python <span><Image src={Python} className={styles.TechLogo} alt='Python'/></span> et Javascript <span><Image src={JSLogo} className={styles.TechLogo} alt='Javascript'/></span>) pour l&apos;époque et simple de développement (comparé aux autres solutions qui sont développées en C <span><Image src={CLogo} className={styles.TechLogo} alt='C'/></span> le langage star de l&apos;époque).</div>
             <div className={styles.paragraphe}>Shinken se concentre sur la fourniture d&apos;une solution de monitoring dite Scalable (qui est capable de fonctionner dans une petite entreprise mais également dans une grosse entreprise disposant de 15000 serveurs) grace à son architecture globale sous forme de démons.</div>
             <div className={styles.paragraphe}>Chaque démons dispose d&apos;un rôle qui lui es attribué, les différents démons sont les suivants : </div>
             <div className={styles.paragraphe}> - Synchronizer: Permet de gérer l&apos;interface de configuration ainsi que les échanges avec la base de données </div>

@@ -21,8 +21,6 @@ const ShinkenArticle = ({
     return (
         <ArticleLayout title={title}>
             <Image src={Logo} className={styles.entrepriseLogo} alt='Shinken' />
-            <h1>Mettre image de l'architecure de shinken</h1>
-
 
 
             <div className={styles.paragraphe}> <CustomLink title='Shinken Solutions' href='https://www.shinken-enterprise.com/' is_underline /> est une entreprise dynamique spécialisée dans la supervision informatique. </div>

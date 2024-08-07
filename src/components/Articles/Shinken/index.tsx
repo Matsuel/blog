@@ -7,6 +7,8 @@ import CustomLink from '@/components/CustomLink';
 import Python from '@/assets/python.svg'
 import JSLogo from '@/assets/js.svg'
 import CLogo from '@/assets/c.svg'
+import Windows from '@/assets/windows.svg'
+import Jira from '@/assets/jira.svg'
 
 interface ArticleProps {
     title: string;
@@ -19,6 +21,8 @@ const ShinkenArticle = ({
     return (
         <ArticleLayout title={title}>
             <Image src={Logo} className={styles.entrepriseLogo} alt='Shinken' />
+            <h1>Mettre image de l'architecure de shinken</h1>
+
 
 
             <div className={styles.paragraphe}> <CustomLink title='Shinken Solutions' href='https://www.shinken-enterprise.com/' is_underline /> est une entreprise dynamique spécialisée dans la supervision informatique. </div>
@@ -39,14 +43,12 @@ const ShinkenArticle = ({
             <div className={styles.paragraphe}>Cette architecure est Scalable car chaque démon peut-être dupliqué afin de décupler les performances de la solution, cela permet également de gérer plus d&apos;objets et donc de s&apos;adapter à l&apos;organisation de chaque client.</div>
 
 
-            <div className={styles.paragraphe}>Les journées de travail s&apos;effectue dans un open space organisé en fonction de la spécialité de chacun (front ou back). Chacun est sur une problématique à résoudre qui sont recensées sur des tickets afin de permettre de suivre l&apos;évolution et de résoudre les problèmes/bugs rencontrés.</div>
-            <div className={styles.paragraphe}>Chaque développeur dispose d&apos;un pc fix sous Windows, la solution est localement installée sur un machine virtuelle afin de pourvoir effectuer les différents développement sur la version adéquat.</div>
-            <div className={styles.paragraphe}>Chaque machine virtuelle est accessible depuis n&apos;importe quel poste du réseau afin que les tech leads ou autre puissent nous dépanner depuis leur place.</div>
+            <div className={styles.paragraphe}>Les journées de travail s&apos;effectue dans un open space organisé en fonction de la spécialité de chacun (front ou back). Chacun est sur une problématique à résoudre qui sont recensées sur des tickets via <CustomLink title='Jira' href='https://www.atlassian.com/software/jira' is_underline /> <span><Image src={Jira} className={styles.TechLogo} alt='Jira'/></span>, afin de permettre de suivre l&apos;évolution et de résoudre les problèmes/bugs rencontrés.</div>
+            <div className={styles.paragraphe}>Chaque développeur dispose d&apos;un pc fix sous Windows <span><Image src={Windows} className={styles.TechLogo} alt='Windows'/></span>, la solution est localement installée sur un machine virtuelle afin de pourvoir effectuer les différents développement sur la version adéquat.</div>
+            <div className={styles.paragraphe}>Chaque machine virtuelle est accessible depuis n&apos;importe quel poste du réseau afin que les tech leads ou autre puissent tester depuis leur poste.</div>
 
 
 
-            <h1>carte avec l&apos;emplcament ainsi que icones des logiciels et des langages</h1>
-            <h1>Ajouter classes important pour souligner, mettre en gras etc</h1>
         </ArticleLayout >
     )
 }

@@ -7,6 +7,7 @@ import { Entreprises } from "@/datas/Entreprises";
 import { Articles } from "@/datas/Articles";
 import ArticleHome from "@/components/ArticleHome";
 import DefaultLayout from "@/components/DefaultLayout";
+import Separator from "@/components/Separator";
 
 export default function Blog() {
 
@@ -20,7 +21,10 @@ export default function Blog() {
           </h2>
         </EmojiTitle>
         {Entreprises.map((stage) => (
-          <Entreprise {...stage} key={stage.name} />
+          <>
+            <Entreprise {...stage} key={stage.name} />
+            <Separator />
+          </>
         ))}
       </div>
 
@@ -32,7 +36,10 @@ export default function Blog() {
           </h2>
         </EmojiTitle>
         {Articles.map((article) => (
-          <ArticleHome {...article} key={article.description} />
+          <>
+            <ArticleHome {...article} key={article.description} />
+            <Separator />
+          </>
         ))}
       </div>
 

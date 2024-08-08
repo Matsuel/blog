@@ -22,6 +22,15 @@ export const Articles: Article[] = [
         template: <Test />
     },
     {
+        title: "Connaissances mobilisées",
+        description: "En quoi mes compétences techniques en développement web m'ont permis de travailler et de m'adapter plus facilement malgré le fait que le sujet m'était parfaitement inconnu ?",
+        date: "29/07/2024",
+        emoji: "1f4bb",
+        side: "back",
+        tags: [],
+        template: <Test />
+    },
+    {
         title: "Bilan Stage 2024",
         description: "Bilan de l'expérience au sein de shinken solutions après 8 semaines",
         date: "29/07/2024",

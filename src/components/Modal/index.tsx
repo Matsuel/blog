@@ -15,8 +15,6 @@ const Modal = ({
     children
 }: ModalProps) => {
 
-    console.log(children)
-
     const clickAwayRef = useClickAway(() => {
         closeModal()
     })

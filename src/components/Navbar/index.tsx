@@ -7,6 +7,7 @@ import Link from 'next/link';
 import Button from '../Button';
 import { Links } from '@/datas/Navbar';
 import Menu from '@/assets/menu.svg'
+import Cross from '@/assets/CloseCross.svg'
 import Image from 'next/image';
 import useSize from '@/hooks/useSize';
 import { useClickAway } from '@uidotdev/usehooks';
@@ -25,7 +26,7 @@ const Navbar = () => {
         <div className={styles.Navbar_container} ref={(isClient && windowsize[0] < 512) ? navClickAway as LegacyRef<HTMLDivElement> : null}>
 
             <button className={styles.Navbar_Menu} onClick={() => setShowModal(!showModal)}>
-                <Image src={Menu} alt='menu' />
+                <Image src={showModal ? Cross : Menu} alt='menu' />
             </button>
 
             {(isClient && (windowsize[0] > 512 || showModal)) &&

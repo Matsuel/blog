@@ -67,3 +67,53 @@
         transition: var(--transition);
     }
 }
+
+@media screen and (max-width:1024px) {
+    .articleHome {
+        width: 80%;
+
+        .name {
+            font-size: 1.5rem;
+        }
+
+        .description {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .articleHome {
+        width: 90%;
+        padding-top: 12%;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .articleHome {
+        width: 90%;
+
+        .name {
+            font-size: 1.3rem;
+        }
+
+        .description {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+    .articleHome {
+        width: 90%;
+        padding-top: 20%;
+
+        .name {
+            font-size: 1rem;
+        }
+
+        .description {
+            font-size: 0.8rem;
+        }
+    }
+}

@@ -23,7 +23,7 @@ export default function Blog() {
         {Entreprises.map((stage) => (
           <>
             <Entreprise {...stage} key={stage.name} />
-            <Separator />
+            <Separator key={stage.description} />
           </>
         ))}
       </div>
@@ -38,7 +38,7 @@ export default function Blog() {
         {Articles.map((article) => (
           <>
             <ArticleHome {...article} key={article.description} />
-            <Separator />
+            <Separator key={article.description} />
           </>
         ))}
       </div>

@@ -19,8 +19,8 @@ const Home = () => {
             Lien grafiakrt https://www.youtube.com/watch?v=YNbPMm08jcw
 
             <div className={styles.presentation}>
-                {HomeDatas.paragraphe.map((paragraphe) => (
-                    <p className={styles.paragraphe} key={paragraphe}>
+                {HomeDatas.paragraphe.map((paragraphe, index) => (
+                    <p className={styles.paragraphe} key={index}>
                         {paragraphe}
                     </p>
                 ))}

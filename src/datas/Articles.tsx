@@ -14,7 +14,9 @@ export const Articles: Article[] = [
         date: "29/07/2024",
         emoji: "1f4bb",
         side: "back",
-        tags: [],
+        tags: [
+            "Python"
+        ],
         template: <Notifs title="Ajout options de notification" />
     },
     // Exploration des défis techniques rencontrés lors de la prise en main d'un codebase existant et les stratégies utilisées pour s'y adapter efficacement.
@@ -24,7 +26,9 @@ export const Articles: Article[] = [
         date: "29/07/2024",
         emoji: "1f4bb",
         side: "back",
-        tags: [],
+        tags: [
+            "Javascript"
+        ],
         template: <TableauNotifs title="Développement et design d'un nouveau tableau de notification" />
     },
     // Discussion sur les défis techniques et de collaboration, y compris les compétences de communication pour faire accepter une nouvelle approche design
@@ -44,26 +48,33 @@ export const Articles: Article[] = [
         date: "09/08/2024",
         emoji: "1f4c8",
         side: "back",
-        tags: [],
+        tags: [
+            "Agile",
+            "Gestion de projet"
+        ],
         template: <Agile title="Gestion de projet agile : les points journaliers pour une collaboration efficace" />
     },
     {
         // parler des constantes, nom de varibles et fonctions, réutilisation des anciennes fonctions
-        title: "Concevoir pour l’évolutivité : anticiper les besoins futurs dans le développement logiciel",
+        title: "Concevoir pour l’évolutivité : anticiper les besoins futurs dans le développement",
         description: "Comment les décisions architecturales peuvent garantir que les systèmes développés puissent évoluer avec l'augmentation des besoins futurs tout en minimisant les refontes majeures ?.",
         date: "09/08/2024",
         emoji: "1f4bb",
         side: "back",
-        tags: [],
+        tags: [
+            "Reflexion"
+        ],
         template: <Evolutivite title="Concevoir pour l’évolutivité : anticiper les besoins futurs dans le développement logiciel" />
     },
     {
         title: "Bilan Stage 2024",
         description: "Bilan de l'expérience au sein de shinken solutions après 8 semaines",
         date: "29/07/2024",
-        emoji: "1f4bc",
-        side: "front",
-        tags: [],
+        emoji: "",
+        side: "",
+        tags: [
+            "Debrief"
+        ],
         template: <BilanShinken title="Bilan Stage 2024" />
     },
 ]

@@ -11,6 +11,7 @@ import Cross from '@/assets/CloseCross.svg'
 import Image from 'next/image';
 import useSize from '@/hooks/useSize';
 import { useClickAway } from '@uidotdev/usehooks';
+    
 
 const Navbar = () => {
 

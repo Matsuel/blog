@@ -26,7 +26,7 @@ const Navbar = () => {
         <div className={styles.Navbar_container} ref={(isClient && windowsize[0] < 512) ? navClickAway as LegacyRef<HTMLDivElement> : null}>
 
             <button className={styles.Navbar_Menu} onClick={() => setShowModal(!showModal)}>
-                <Image src={showModal ? Cross : Menu} alt='menu' />
+                <Image src={showModal ? Cross : Menu} alt='menu' className={styles.Navbar_Image} />
             </button>
 
             {(isClient && (windowsize[0] > 512 || showModal)) &&

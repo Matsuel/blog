@@ -72,6 +72,11 @@
             all: unset;
             cursor: pointer;
             display: block;
+
+            .Navbar_Image {
+                width: 24px;
+                height: 24px;
+            }
         }
     }
 }

@@ -1,6 +1,6 @@
 "use client"
 
-import React, { LegacyRef, useState } from 'react';
+import React, { LegacyRef, useEffect, useState } from 'react';
 
 import styles from './Navbar.module.scss';
 import Link from 'next/link';
@@ -17,9 +17,18 @@ const Navbar = () => {
     const windowsize = useSize();
     const [showModal, setShowModal] = useState<boolean>(false);
     const isClient = typeof window === 'object';
+    const [shouldRenderLinks, setshouldRenderLinks] = useState<boolean>(false);
     const navClickAway = useClickAway(() => {
         setShowModal(false);
     })
+
+    useEffect(() => {
+        if (windowsize[0] > 512 || showModal) {
+            setshouldRenderLinks(true)
+        } else {
+            setshouldRenderLinks(false)
+        }
+    }, [windowsize, showModal])
 
 
     return (
@@ -29,7 +38,7 @@ const Navbar = () => {
                 <Image src={showModal ? Cross : Menu} alt='menu' className={styles.Navbar_Image} />
             </button>
 
-            {(isClient && (windowsize[0] > 512 || showModal)) &&
+            {shouldRenderLinks &&
                 <>
                     <Link className={styles.Navbar_title} href="/">
                         Matheo Lang

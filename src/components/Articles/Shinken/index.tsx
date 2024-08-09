@@ -1,6 +1,8 @@
+"use client"
+
 import ArticleLayout from '@/components/ArticleLayout'
 import React from 'react'
-import styles from './Shinken.module.scss'
+import styles from '../Article.module.scss'
 import Logo from '@/assets/shinken.png'
 import Image from 'next/image';
 import CustomLink from '@/components/CustomLink';
@@ -10,7 +12,7 @@ import CLogo from '@/assets/c.svg'
 import Windows from '@/assets/windows.svg'
 import Jira from '@/assets/jira.svg'
 
-interface ArticleProps {
+export interface ArticleProps {
     title: string;
 }
 

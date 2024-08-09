@@ -1,4 +1,9 @@
-import Test from "@/components/Articles/Test";
+import Agile from "@/components/Articles/Agile";
+import BilanShinken from "@/components/Articles/BilanShinken";
+import Connaissances from "@/components/Articles/Connaissances";
+import Evolutivite from "@/components/Articles/Evolutivite";
+import Notifs from "@/components/Articles/Notifs";
+import TableauNotifs from "@/components/Articles/TableauNotifs";
 import { Article } from "@/types/Article";
 import React from "react";
 
@@ -10,7 +15,7 @@ export const Articles: Article[] = [
         emoji: "1f4bb",
         side: "back",
         tags: [],
-        template: <Test />
+        template: <Notifs title="Ajout options de notification" />
     },
     // Exploration des défis techniques rencontrés lors de la prise en main d'un codebase existant et les stratégies utilisées pour s'y adapter efficacement.
     {
@@ -20,7 +25,7 @@ export const Articles: Article[] = [
         emoji: "1f4bb",
         side: "back",
         tags: [],
-        template: <Test />
+        template: <TableauNotifs title="Développement et design d'un nouveau tableau de notification" />
     },
     // Discussion sur les défis techniques et de collaboration, y compris les compétences de communication pour faire accepter une nouvelle approche design
     {
@@ -30,7 +35,7 @@ export const Articles: Article[] = [
         emoji: "1f4bb",
         side: "back",
         tags: [],
-        template: <Test />
+        template: <Connaissances title="Connaissances mobilisées" />
     },
     // Analyse de l'application des connaissances existantes et des nouvelles compétences acquises au cours du projet. Défauts rencontrées dans le code ainsi que défauts personnels
     {
@@ -40,7 +45,7 @@ export const Articles: Article[] = [
         emoji: "1f4c8",
         side: "back",
         tags: [],
-        template: <Test />
+        template: <Agile title="Gestion de projet agile : les points journaliers pour une collaboration efficace" />
     },
     {
         // parler des constantes, nom de varibles et fonctions, réutilisation des anciennes fonctions
@@ -50,7 +55,7 @@ export const Articles: Article[] = [
         emoji: "1f4bb",
         side: "back",
         tags: [],
-        template: <Test />
+        template: <Evolutivite title="Concevoir pour l’évolutivité : anticiper les besoins futurs dans le développement logiciel" />
     },
     {
         title: "Bilan Stage 2024",
@@ -59,6 +64,6 @@ export const Articles: Article[] = [
         emoji: "1f4bc",
         side: "front",
         tags: [],
-        template: <Test />
+        template: <BilanShinken title="Bilan Stage 2024" />
     },
 ]

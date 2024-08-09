@@ -1,6 +1,6 @@
 import { EntrepriseInfos } from '@/types/Entreprise'
 import React, { useCallback, useState } from 'react'
-import styles from './Entreprise.module.scss'
+import styles from '../ArticleHome/ArticleHome.module.scss'
 import Badge from '../Badge'
 import { Emoji } from 'emoji-picker-react'
 import Image from 'next/image'
@@ -32,7 +32,7 @@ const Entreprise = ({
     }, []);
 
     return (
-        <button className={styles.entreprise} onClick={openModal}>
+        <button className={styles.articleHome} onClick={openModal}>
             <div className={styles.badge}>
                 <Badge variant={side as 'default' | 'light' | 'dark' | 'primary' | 'red' | 'green' | 'front' | 'back'} style={{ padding: ".5rem" }}>
                     <Emoji unified={emoji} size={15} />

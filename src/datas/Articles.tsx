@@ -43,6 +43,7 @@ export const Articles: Article[] = [
         template: <Test />
     },
     {
+        // parler des constantes, nom de varibles et fonctions, réutilisation des anciennes fonctions
         title: "Concevoir pour l’évolutivité : anticiper les besoins futurs dans le développement logiciel",
         description: "Comment les décisions architecturales peuvent garantir que les systèmes développés puissent évoluer avec l'augmentation des besoins futurs tout en minimisant les refontes majeures ?.",
         date: "09/08/2024",

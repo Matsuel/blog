@@ -56,11 +56,14 @@
     .Navbar_container {
         top: .5rem;
         left: .5rem;
+        padding: .5rem;
         width: auto;
         height: auto;
         flex-direction: column;
         align-items: flex-start;
         gap: 1rem;
+        box-shadow: var(--shadow);
+        border-radius: var(--radius);
 
         .Navbar_links {
             flex-direction: column;
@@ -70,6 +73,11 @@
             all: unset;
             cursor: pointer;
             display: block;
+
+            .Navbar_Image {
+                width: 24px;
+                height: 24px;
+            }
         }
     }
 }

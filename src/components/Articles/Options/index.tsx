@@ -1,6 +1,6 @@
 import ArticleLayout from '@/components/ArticleLayout'
 import React from 'react'
-import styles from '../Shinken/Shinken.module.scss'
+import styles from '../Article.module.scss'
 import TableauMigration from '@/assets/tableau migration options.png'
 import Image from 'next/image';
 import CustomLink from '@/components/CustomLink';

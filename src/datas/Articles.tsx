@@ -1,3 +1,4 @@
+import OptionArticle from "@/components/Articles/Options";
 import Test from "@/components/Articles/Test";
 import { Article } from "@/types/Article";
 import React from "react";
@@ -10,7 +11,7 @@ export const Articles: Article[] = [
         emoji: "1f4bb",
         side: "back",
         tags: [],
-        template: <Test />
+        template: <OptionArticle title="Ajout options de notification" />
     },
     {
         title: "Développement et design d'un nouveau tableau de notification",

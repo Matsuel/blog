@@ -11,12 +11,6 @@ import Title from '@/components/Title/Title'
 const Home = () => {
     return (
         <DefaultLayout title='Matheo' emojiCode="">
-            Qui suis-je?
-            CV
-            Parcours
-            Lien vers portfolio
-
-            Lien grafiakrt https://www.youtube.com/watch?v=YNbPMm08jcw
 
             <div className={styles.presentation}>
                 {HomeDatas.paragraphe.map((paragraphe) => (
